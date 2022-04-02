@@ -1,0 +1,11 @@
+server:  port: 9100 
+spring:  application:    name: user-profile-service
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shoppingcart
+    username: root
+    password: PASSWORD
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true###### JWT Configurations #####################security:  jwt:    token:      secret-key: shoppingcart_db-dev      expire-length: 2629746000    
